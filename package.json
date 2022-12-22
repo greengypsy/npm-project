@@ -1,0 +1,23 @@
+{
+  "name": "npm-project",
+  "version": "1.0.0",
+  "description": "\"test npm-project\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greengypsy/npm-project.git"
+  },
+  "author": "CK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greengypsy/npm-project/issues"
+  },
+  "homepage": "https://github.com/greengypsy/npm-project#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "handlebars": "^4.7.7"
+  }
+}
