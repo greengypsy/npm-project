@@ -16,3 +16,12 @@ jobs:
           fileOutput: 'home.html'
       - name: Show output file
         run: cat home.html
+      - name: Init new repo in dist folder and commit generated files
+        run: |
+          git add ./
+          git commit -m "add generated html files"
+      - name: Force push to destination branch
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          branch: master
+        
