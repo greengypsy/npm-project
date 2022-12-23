@@ -13,6 +13,6 @@ jobs:
         with:
           fileTemplate: 'views/home.ejs'
           variables: '{"name" : "Pepe"}'
-          fileOutput: 'templates/home.html'
+          fileOutput: 'home.html'
       - name: Show output file
-        run: cat templates/home.html
+        run: cat home.html
