@@ -7,12 +7,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Show template file
-        run: cat templates/some.ejs
+        run: cat views/home.ejs
       - name: EJS Action
         uses: yogonza524/ejs-action@v1.3
         with:
           fileTemplate: 'views/home.ejs'
           variables: '{"name" : "Pepe"}'
-          fileOutput: 'templates/output.html'
+          fileOutput: 'templates/home.html'
       - name: Show output file
-        run: cat templates/output.html
+        run: cat templates/home.html
