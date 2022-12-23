@@ -1,0 +1,4 @@
+name: action-ejs
+  uses: jaywcjlove/action-ejs@main
+  with:
+    template-file: views/home.ejs
