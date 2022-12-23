@@ -13,9 +13,9 @@ jobs:
         with:
           fileTemplate: 'views/home.ejs'
           variables: '{"name" : "Pepe"}'
-          fileOutput: 'home.html'
+          fileOutput: 'views/home.html'
       - name: Show output file
-        run: cat home.html
+        run: cat views/home.html
       - name: Init new repo in dist folder and commit generated files
         run: |
           git add ./
